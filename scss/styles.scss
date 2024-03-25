@@ -8,3 +8,11 @@ $color_7: #FFF;
 $font-family_1: Arial, Helvetica, sans-serif;
 $background-color_1: rgba(37, 52, 65,0.15);
 $background-color_2: #bbb2b29a;
+
+body {
+	background: url(img/aleksandra-khaprenko-0PPw9irzLIw-unsplash.jpg) rgba(0, 0, 0, 0.3) !important;
+	background-blend-mode: multiply;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}

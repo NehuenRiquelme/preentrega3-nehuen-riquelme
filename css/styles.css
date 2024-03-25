@@ -1,3 +1,9 @@
-
+body {
+  background: url(img/aleksandra-khaprenko-0PPw9irzLIw-unsplash.jpg) rgba(0, 0, 0, 0.3) !important;
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 /*# sourceMappingURL=styles.css.map */
