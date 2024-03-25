@@ -4,7 +4,7 @@
   }
 }
 body {
-  background: url(/img/aleksandra-khaprenko-0PPw9irzLIw-unsplash.jpg) !important;
+  background: url(/img/aleksandra-khaprenko-0PPw9irzLIw-unsplash.jpg) rgba(0, 0, 0, 0.3) !important;
   background-blend-mode: multiply;
   background-position: center;
   background-size: cover;
@@ -125,6 +125,63 @@ segunda pagina .carousel-inner {
 
 .container .barra {
   margin: 2% 0;
+}
+
+.container-brr .barra p {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container-brr .barra .progreso {
+  position: relative;
+  width: 95%;
+  height: 6px;
+  background: #1d60c4;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 5px 0;
+}
+.container-brr .barra1 p {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container-brr .barra1 .progreso1 {
+  position: relative;
+  width: 70%;
+  height: 6px;
+  background: #1d60c4;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 5px 0;
+}
+.container-brr .barra2 p {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container-brr .barra2 .progreso2 {
+  position: relative;
+  width: 90%;
+  height: 6px;
+  background: #1d60c4;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 5px 0;
+}
+.container-brr .barra3 p {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container-brr .barra3 .progreso3 {
+  position: relative;
+  width: 70%;
+  height: 6px;
+  background: #2763bd;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 5px 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

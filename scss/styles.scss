@@ -15,7 +15,7 @@ $background-color_2: #bbb2b29a;
 	}
 } 
 body {
-	background: url(/img/aleksandra-khaprenko-0PPw9irzLIw-unsplash.jpg)  !important;
+	background: url(/img/aleksandra-khaprenko-0PPw9irzLIw-unsplash.jpg)  rgba(0, 0, 0, 0.3) !important;
 	background-blend-mode: multiply;
 	background-position: center;
 	background-size: cover;
@@ -134,5 +134,72 @@ segunda {
 .container {
 	.barra {
 		margin: 2% 0;
+	}
+}
+
+.container-brr {
+	.barra {
+		p {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+		}
+		.progreso {
+			position: relative;
+			width: 95%;
+			height: 6px;
+			background: #1d60c4;
+			border-radius: 6px;
+			overflow: hidden;
+			margin: 5px 0;
+		}
+	}
+	.barra1 {
+		p {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+		}
+		.progreso1 {
+			position: relative;
+			width: 70%;
+			height: 6px;
+			background: #1d60c4;
+			border-radius: 6px;
+			overflow: hidden;
+			margin: 5px 0;
+		}
+	}
+	.barra2 {
+		p {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+		}
+		.progreso2 {
+			position: relative;
+			width: 90%;
+			height: 6px;
+			background: #1d60c4;
+			border-radius: 6px;
+			overflow: hidden;
+			margin: 5px 0;
+		}
+	}
+	.barra3 {
+		p {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+		}
+		.progreso3 {
+			position: relative;
+			width: 70%;
+			height: 6px;
+			background: #2763bd;
+			border-radius: 6px;
+			overflow: hidden;
+			margin: 5px 0;
+		}
 	}
 }
