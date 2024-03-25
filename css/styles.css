@@ -184,4 +184,33 @@ segunda pagina .carousel-inner {
   margin: 5px 0;
 }
 
+pagina de servicios .home2 {
+  height: 70vh;
+  display: flex-box;
+  align-items: center;
+  padding: 0 10%;
+  margin-top: 10%;
+}
+pagina contacto .home3 {
+  height: 50vh;
+  display: grid;
+  place-items: center;
+  padding: 0 10%;
+}
+
+.home-content2 {
+  max-width: 600px;
+}
+.home-content2 h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #010005;
+}
+.home-content2 li {
+  color: #fdfcff;
+  font-size: 16px;
+  margin: 20px 0 40px;
+}
+
 /*# sourceMappingURL=styles.css.map */
