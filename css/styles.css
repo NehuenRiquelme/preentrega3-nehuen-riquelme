@@ -1,5 +1,10 @@
+@keyframes rotate {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
 body {
-  background: url(img/aleksandra-khaprenko-0PPw9irzLIw-unsplash.jpg) rgba(0, 0, 0, 0.3) !important;
+  background: url(/img/aleksandra-khaprenko-0PPw9irzLIw-unsplash.jpg) !important;
   background-blend-mode: multiply;
   background-position: center;
   background-size: cover;
@@ -42,6 +47,64 @@ body {
   width: 5em;
   z-index: 0;
   animation: 3.5s rotate linear infinite;
+}
+
+.home-content {
+  max-width: 600px;
+  z-index: 2;
+}
+.home-content h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+  color-interpolation-filters: auto #343434;
+}
+.home-content h3 {
+  font-size: 25px;
+  color: #fffefe;
+}
+.home-content h4 {
+  font-size: 30px;
+  color: #fffefe;
+}
+.home-content .btn-box {
+  display: flex;
+  width: 200px;
+  height: 50px;
+}
+
+.btn-box {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #2b4661;
+  border-radius: 60px;
+  transition: transform 0.3 ease, box-shadow 0.3 ease;
+  font-weight: 600;
+  z-index: 1;
+  overflow: hidden;
+  background-image: linear-gradient(to top, #2c505a 0%, #3e4d66 100%);
+}
+.btn-box a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.btn-box::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to top, #4f8492 0%, #233553 100%);
+  transition: transform 0.5s ease;
+  z-index: -1;
+}
+.btn-box:hover {
+  transform: translate(0, -6px);
+  box-shadow: 10px -10px 25px 0 rgba(66, 24, 83, 0.5), 10px -10px 25px 0 rgba(30, 108, 134, 0.5);
 }
 
 /*# sourceMappingURL=styles.css.map */
