@@ -6,4 +6,42 @@ body {
   background-repeat: no-repeat;
 }
 
+.home {
+  display: flex;
+  position: relative;
+  background: rgba(255, 255, 255, 0.9450980392);
+  padding: 1.5em 2.5em;
+  color: rgba(255, 255, 255, 0.768627451);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 15px 15px 55px rgb(110, 154, 172);
+  width: 70%;
+  max-width: 600px;
+  top: 20%;
+}
+.home::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(-45deg, #445061, #5b8691);
+  width: calc(100% - 5px);
+  height: calc(100% - 5px);
+  border-radius: 10px;
+  z-index: 1;
+}
+.home::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(90deg, transparent, #0a93f5, transparent);
+  height: 160%;
+  width: 5em;
+  z-index: 0;
+  animation: 3.5s rotate linear infinite;
+}
+
 /*# sourceMappingURL=styles.css.map */

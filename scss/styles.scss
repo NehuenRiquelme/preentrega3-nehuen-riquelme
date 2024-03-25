@@ -9,10 +9,108 @@ $font-family_1: Arial, Helvetica, sans-serif;
 $background-color_1: rgba(37, 52, 65,0.15);
 $background-color_2: #bbb2b29a;
 
+@keyframes rotate {
+	100% {
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+} 
 body {
 	background: url(img/aleksandra-khaprenko-0PPw9irzLIw-unsplash.jpg) rgba(0, 0, 0, 0.3) !important;
 	background-blend-mode: multiply;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+.home {
+	display: flex;
+	position: relative;
+	background: #fffffff1;
+	padding: 1.5em 2.5em;
+	color: $color_1;
+	border-radius: 15px;
+	overflow: hidden;
+	box-shadow: 15px 15px 55px rgb(110, 154, 172);
+	width: 70%;
+	max-width: 600px;
+	top: 20%;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-image: linear-gradient(-45deg, #445061, #5b8691);
+		width: calc(100% - 5px);
+		height: calc(100% - 5px);
+		border-radius: 10px;
+		z-index: 1;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-image: linear-gradient( 90deg, transparent, #0a93f5, transparent );
+		height: 160%;
+		width: 5em;
+		z-index: 0;
+		animation: 3.5s rotate linear infinite;
+	}
+}
+.home-content {
+	max-width: 600px;
+	z-index: 2;
+	h1 {
+		font-size: 40px;
+		font-weight: 700;
+		line-height: 1.2;
+		color-interpolation-filters: auto #343434;
+	}
+	h3 {
+		font-size: 25px;
+		color: $color_2;
+	}
+	h4 {
+		font-size: 30px;
+		color: $color_2;
+	}
+	.btn-box {
+		display: flex;
+		width: 200px;
+		height: 50px;
+	}
+}
+.btn-box {
+	a {
+		text-decoration: none;
+		font-family: $font-family_1;
+		color: $color_3;
+	}
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid #2b4661;
+	border-radius: 60px;
+	transition: transform 0.3 ease, box-shadow 0.3 ease;
+	font-weight: 600;
+	z-index: 1;
+	overflow: hidden;
+	background-image: linear-gradient(to top, #2c505a 0%, #3e4d66 100%);
+	&::before {
+		content: '';
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-image: linear-gradient(to top, #4f8492 0%, #233553 100%);
+		transition: transform 0.5s ease;
+		z-index: -1;
+	}
+	&:hover {
+		transform: translate(0,-6px);
+		box-shadow: 10px -10px 25px 0 rgba(66, 24, 83, 0.5), 10px -10px 25px 0 rgba(30, 108, 134, 0.5);
+	}
 }
