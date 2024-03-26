@@ -185,11 +185,8 @@ segunda pagina .carousel-inner {
 }
 
 pagina de servicios .home2 {
-  height: 70vh;
-  display: flex-box;
-  align-items: center;
-  padding: 0 10%;
-  margin-top: 10%;
+  padding: 80px 0;
+  margin: 10%;
 }
 pagina contacto .home3 {
   height: 50vh;
@@ -200,6 +197,12 @@ pagina contacto .home3 {
 
 .home-content2 {
   max-width: 600px;
+  position: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 0;
+  margin: 5vh;
 }
 .home-content2 h1 {
   font-size: 56px;
@@ -213,23 +216,25 @@ pagina contacto .home3 {
   margin: 20px 0 40px;
 }
 
+.home3 {
+  height: 50vh;
+  display: grid;
+  place-items: center;
+  padding: 0 10%;
+}
+
 .home3-content3 {
   max-width: 100%;
   margin-top: 30%;
 }
 .home3-content3 h1 {
   font-size: 56px;
-  font-weight: 700;
+  font-weight: 70rem;
   line-height: 1.2;
 }
 .home3-content3 h3 {
   font-size: 25px;
-  font-weight: 600;
-}
-.home3-content3 .btn-box {
-  display: flex;
-  width: 200px;
-  height: 50px;
+  font-weight: 60rem;
 }
 
 .home-red {
@@ -238,6 +243,8 @@ pagina contacto .home3 {
   width: 180px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30vh;
+  margin-left: 10vh;
 }
 .home-red a {
   position: relative;
@@ -268,6 +275,38 @@ pagina contacto .home3 {
 }
 .home-red a:hover:before {
   width: 100%;
+}
+
+.home3-content3 .btn-box {
+  display: flex;
+  width: 200px;
+  height: 50px;
+}
+
+@media (max-width: 991px) {
+  .sidebar {
+    background-color: rgba(37, 52, 65, 0.15) !important;
+    backdrop-filter: blur(10px);
+  }
+}
+.btn-wsp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  line-height: 63px;
+  bottom: 25px;
+  right: 25px;
+  background: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 35px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  transition: all 300ms ease;
+}
+.btn-wsp:hover {
+  background: #20ba5a;
 }
 
 /*# sourceMappingURL=styles.css.map */
